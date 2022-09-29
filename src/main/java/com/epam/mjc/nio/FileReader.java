@@ -36,7 +36,7 @@ public class FileReader {
             m.put(keyValue[0], keyValue[1]);
         }
         String name = m.get("Name");
-        int age = Integer.parseInt(m.get("Name"));
+        int age = Integer.parseInt(m.get("Age"));
         long phone = Long.parseLong(m.get("Phone"));
         String email = m.get("Email");
         return new Profile(name, age, email,phone);
