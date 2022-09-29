@@ -13,7 +13,7 @@ public class FileReader {
 
     public Profile getDataFromFile(File file) {
         StringBuilder str = new StringBuilder();
-        try(RandomAccessFile aFile = new RandomAccessFile("/home/marine/IdeaProjects/java_nio/src/Profile.txt", "r");
+        try(RandomAccessFile aFile = new RandomAccessFile(file.getPath(), "r");
             FileChannel inChannel = aFile.getChannel();){
 
             ByteBuffer buffer  = ByteBuffer.allocate(1024);
